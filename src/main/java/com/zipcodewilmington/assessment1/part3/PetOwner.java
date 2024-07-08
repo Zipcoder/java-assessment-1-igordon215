@@ -67,6 +67,8 @@ public class PetOwner {
      * @return the age of the Pet object whose age field is the highest amongst all Pets in this class
      */
     public Integer getOldestPetAge() {
+        //int get oldest
+
         return null;
 
     }
@@ -76,6 +78,7 @@ public class PetOwner {
      * @return the sum of ages of Pet objects stored in this class divided by the number of Pet object
      */
     public Float getAveragePetAge() {
+        //need to revist this
         return null;
     }
 
