@@ -39,9 +39,7 @@ public class PetOwner {
      */
     public void removePet(Pet pet) {
         pets.remove(pet);
-       // if (pet != null){
-         //   pet.setOwner(null);
-       // }
+
     }
 
     /**

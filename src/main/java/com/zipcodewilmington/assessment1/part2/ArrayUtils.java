@@ -46,16 +46,7 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
-        Object mostCommon = null;
-        int maxCount = 0;
-        for (Object obj : objectArray) {
-            int count = getNumberOfOccurrences(objectArray, obj);
-            if (count > maxCount) {
-                maxCount = count;
-                mostCommon = obj;
-            }
-        }
-        return mostCommon;
+        return null;
     }
 
 
@@ -65,16 +56,7 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the least frequently occuring object in the array
      */
     public static Object getLeastCommon(Object[] objectArray) {
-        Object leastCommon = null;
-        int minCount = objectArray.length + 1;
-        for (Object obj : objectArray) {
-            int count = getNumberOfOccurrences(objectArray, obj);
-            if (count < minCount) {
-                minCount = count;
-                leastCommon = obj;
-            }
-        }
-        return leastCommon;
+        return null;
     }
 
     /**
