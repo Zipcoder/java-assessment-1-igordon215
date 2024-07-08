@@ -16,7 +16,7 @@ public class IntegerUtils {
             sum += i;
         }
         return sum;
-        //return null;
+
     }
 
     /**
@@ -29,7 +29,7 @@ public class IntegerUtils {
             product *= i;
         }
         return product;
-        //return null;
+
     }
 
     /**
@@ -44,6 +44,6 @@ public class IntegerUtils {
             val /= 10;
         }
         return reversed;
-        //return null;
+
     }
 }

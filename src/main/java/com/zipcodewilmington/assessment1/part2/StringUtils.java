@@ -12,7 +12,7 @@ public class StringUtils {
      */
     public static String[] getWords(String sentence) {
         return sentence.split("\\s+");
-        //return null;
+
     }
 
 
@@ -28,7 +28,7 @@ public class StringUtils {
         }else {
             return "";
         }
-        //return null;
+
     }
 
     /**
@@ -44,7 +44,7 @@ public class StringUtils {
         } else {
             return "";
         }
-        //return null;
+
     }
 
     /**
@@ -59,7 +59,7 @@ public class StringUtils {
         } else {
             return "";
         }
-        //return null;
+
     }
 
 
@@ -74,7 +74,7 @@ public class StringUtils {
             return str;
         }
         return str.substring(0, index) + str.substring(index + 1);
-        //return null;
+
     }
 
 }

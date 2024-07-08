@@ -14,7 +14,7 @@ public class IntegerArrayUtils {
             sum += num;
         }
         return sum;
-        //return null;
+
     }
 
     /**
@@ -27,7 +27,7 @@ public class IntegerArrayUtils {
             product *= num;
         }
         return product;
-        //return null;
+
     }
 
     /**
@@ -37,6 +37,6 @@ public class IntegerArrayUtils {
     public static Double getAverage(Integer[] intArray) {
         int sum = getSum(intArray);
         return (double) sum / intArray.length;
-        //return null;
+
     }
 }
