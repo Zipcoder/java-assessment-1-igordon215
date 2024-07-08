@@ -38,9 +38,9 @@ public class PetOwner {
      * @param pet pet to be removed from the composite collection Pets
      */
     public void removePet(Pet pet) {
-        return null;
+       // return null;
         //if(pet = 1 )
-        // pets.remove(pet);
+         //pets.remove(pet);
     }
 
     /**
@@ -55,6 +55,8 @@ public class PetOwner {
      * @return the age of the Pet object whose age field is the lowest amongst all Pets in this class
      */
     public Integer getYoungetPetAge() {
+        //int youngest = pets.get(0).getAge();
+        //for(int i = 1; i < pets.size();i++)
         return null;
     }
 
