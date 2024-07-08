@@ -1,5 +1,8 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -10,7 +13,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with evens removed
      */
     public Integer[] deleteEvens(Integer[] ints) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (Integer num : ints) {
+            if (num % 2 != 0) {
+                result.add(num);
+            }
+        }
+        return result.toArray(new Integer[0]);
+        //return null;
     }
 
     /**
@@ -19,7 +29,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with odds removed
      */
     public Integer[] deleteOdds(Integer[] ints) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (Integer num : ints) {
+            if (num % 2 == 0) {
+                result.add(num);
+            }
+        }
+        return result.toArray(new Integer[0]);
+        //return null;
     }
 
     /**
@@ -28,7 +45,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by 3 removed
      */
     public Integer[] deleteMultiplesOf3(Integer[] ints) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (Integer num : ints) {
+            if (num % 3 != 0) {
+                result.add(num);
+            }
+        }
+        return result.toArray(new Integer[0]);
+        //return null;
     }
 
     /**
@@ -38,6 +62,13 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by `multiple` removed
      */
     public Integer[] deleteMultiplesOfN(Integer[] ints, int multiple) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (Integer num : ints) {
+            if (num % multiple != 0) {
+                result.add(num);
+            }
+        }
+        return result.toArray(new Integer[0]);
     }
+        //return null;
 }
