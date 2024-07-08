@@ -36,7 +36,7 @@ public class ArrayUtils {
         for (Object obj : objectArray) {
             if (!obj.equals(objectToRemove)) list.add(obj);
         }
-        return list.toArray((Object[]) Arrays.copyOf(objectArray, 0));
+        return list.toArray(Arrays.copyOf(objectArray, 0));
     }
 
 

@@ -38,10 +38,10 @@ public class PetOwner {
      * @param pet pet to be removed from the composite collection Pets
      */
     public void removePet(Pet pet) {
-        if (pet != null && pets.contains(pet)) {
-            pets.remove(pet);
-            pet.setOwner(null);
-        }
+        pets.remove(pet);
+       // if (pet != null){
+         //   pet.setOwner(null);
+       // }
     }
 
     /**
@@ -75,7 +75,7 @@ public class PetOwner {
      * @return the sum of ages of Pet objects stored in this class divided by the number of Pet object
      */
     public Float getAveragePetAge() {
-     return null;
+        return null;
     }
 
     /**

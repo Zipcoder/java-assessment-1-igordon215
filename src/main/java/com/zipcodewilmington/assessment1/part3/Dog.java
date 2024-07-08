@@ -6,18 +6,15 @@ import java.util.Date;
  * Created by leon on 2/16/18.
  */
 public class Dog extends Pet {
-   // private String name;
-    //private Integer age;
-    //private PetOwner owner;
-        public Dog(String name, Integer age, PetOwner owner){
-            //super(name, age, owner);
-        }
+   public Dog(){
+       super("Dog name", 0);
+   }
     /**
      * @param name name of this Dog
      * @param age age of this dog
      */
     public Dog(String name, Integer age) {
-        super("Dog name", age);
+        super(name,age);
 
     }
 
@@ -25,14 +22,14 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(Integer age) {
-        super("Dog name", 0);
+        super("Dog name", age);
     }
 
     /**
      * @param name name of this dog
      */
     public Dog(String name) {
-        super("Dog name", 0);
+        super(name,0);
 
        // this.name = name;
     }
@@ -43,9 +40,9 @@ public class Dog extends Pet {
      * name is DogName
      * age is 0
      */
-    public Dog() {
-        super("",0);
-    }
+    //public Dog() {
+    //    return null;
+    //}
 
     /**
      * @return bark as a string
