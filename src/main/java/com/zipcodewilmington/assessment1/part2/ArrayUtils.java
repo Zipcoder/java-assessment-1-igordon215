@@ -32,7 +32,11 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        return null;
+        List<Object> list = new ArrayList<>();
+        for (Object obj : objectArray) {
+            if (!obj.equals(objectToRemove)) list.add(obj);
+        }
+        return list.toArray((Object[]) Arrays.copyOf(objectArray, 0));
     }
 
 
@@ -42,7 +46,16 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
-        return null;
+        Object mostCommon = null;
+        int maxCount = 0;
+        for (Object obj : objectArray) {
+            int count = getNumberOfOccurrences(objectArray, obj);
+            if (count > maxCount) {
+                maxCount = count;
+                mostCommon = obj;
+            }
+        }
+        return mostCommon;
     }
 
 
@@ -52,7 +65,16 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the least frequently occuring object in the array
      */
     public static Object getLeastCommon(Object[] objectArray) {
-        return null;
+        Object leastCommon = null;
+        int minCount = objectArray.length + 1;
+        for (Object obj : objectArray) {
+            int count = getNumberOfOccurrences(objectArray, obj);
+            if (count < minCount) {
+                minCount = count;
+                leastCommon = obj;
+            }
+        }
+        return leastCommon;
     }
 
     /**
@@ -62,6 +84,8 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
-        return null;
+        Object[] result = Arrays.copyOf(objectArray, objectArray.length + objectArrayToAdd.length);
+        System.arraycopy(objectArrayToAdd, 0, result, objectArray.length, objectArrayToAdd.length);
+        return result;
     }
 }

@@ -71,7 +71,7 @@ public class StringUtils {
      */
     public static String removeCharacterAtIndex(String str, int index) {
         if (index < 0 || index >= str.length()) {
-            return str; // if index out of bounds, return original string
+            return str;
         }
         return str.substring(0, index) + str.substring(index + 1);
         //return null;
