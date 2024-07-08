@@ -12,6 +12,8 @@ public class MultiplesDeleter {
      * @return all ints which are not divisible by 2
      * given an array of integers, named `ints` return an identical array with evens removed
      */
+
+
     public Integer[] deleteEvens(Integer[] ints) {
         List<Integer> result = new ArrayList<>();
         for (Integer num : ints) {
@@ -20,7 +22,7 @@ public class MultiplesDeleter {
             }
         }
         return result.toArray(new Integer[0]);
-        //return null;
+
     }
 
     /**
@@ -36,7 +38,7 @@ public class MultiplesDeleter {
             }
         }
         return result.toArray(new Integer[0]);
-        //return null;
+
     }
 
     /**
@@ -52,7 +54,7 @@ public class MultiplesDeleter {
             }
         }
         return result.toArray(new Integer[0]);
-        //return null;
+
     }
 
     /**
@@ -70,5 +72,5 @@ public class MultiplesDeleter {
         }
         return result.toArray(new Integer[0]);
     }
-        //return null;
+
 }

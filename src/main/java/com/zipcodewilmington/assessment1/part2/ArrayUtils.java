@@ -22,7 +22,7 @@ public class ArrayUtils {
             }
         }
         return counter;
-        //return null;
+
     }
 
     /**
