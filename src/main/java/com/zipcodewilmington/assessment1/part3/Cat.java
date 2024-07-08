@@ -29,7 +29,6 @@ public class Cat extends Pet {
         super(name,0);
 
     }
-
     /**
      * nullary constructor
      * by default, a Cat's

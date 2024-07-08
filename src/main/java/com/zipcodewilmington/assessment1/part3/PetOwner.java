@@ -38,8 +38,9 @@ public class PetOwner {
      * @param pet pet to be removed from the composite collection Pets
      */
     public void removePet(Pet pet) {
-        pets.remove(pet);
-
+        return null;
+        //if(pet = 1 )
+        // pets.remove(pet);
     }
 
     /**
